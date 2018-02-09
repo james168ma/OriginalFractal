@@ -26,11 +26,11 @@ public void fractal(float x, float y, float xShift, float yShift, float siz, flo
 
 	if(siz >= 300 || increment <= 0) {
 
-		fill(0);
-		rect(adjustedX - xShift, adjustedY - yShift, siz, siz);
-		rect(adjustedX + xShift, adjustedY - yShift, siz, siz);
-		rect(adjustedX - xShift, adjustedY + yShift, siz, siz);
-		rect(adjustedX + xShift, adjustedY + yShift, siz, siz);
+		// fill(0);
+		// rect(adjustedX - xShift, adjustedY - yShift, siz, siz);
+		// rect(adjustedX + xShift, adjustedY - yShift, siz, siz);
+		// rect(adjustedX - xShift, adjustedY + yShift, siz, siz);
+		// rect(adjustedX + xShift, adjustedY + yShift, siz, siz);
 		noFill();
 		rect(adjustedX, adjustedY, siz*2 + xShift, siz*2 + yShift);
 		//ellipse(adjustedX, adjustedY, sqrt(2*(siz*2 + xShift)*(siz*2 + xShift)), sqrt(2*(siz*2 + xShift)*(siz*2 + xShift)));
@@ -40,11 +40,11 @@ public void fractal(float x, float y, float xShift, float yShift, float siz, flo
 
 		fractal(x, y, xShift + increment, yShift + increment, siz + increment, increment-.2, sensitivity - .2, numCount+1);
 
-		fill(0);
-		rect(adjustedX - xShift, adjustedY - yShift, siz, siz);
-		rect(adjustedX + xShift, adjustedY - yShift, siz, siz);
-		rect(adjustedX - xShift, adjustedY + yShift, siz, siz);
-		rect(adjustedX + xShift, adjustedY + yShift, siz, siz);
+		// fill(0);
+		// rect(adjustedX - xShift, adjustedY - yShift, siz, siz);
+		// rect(adjustedX + xShift, adjustedY - yShift, siz, siz);
+		// rect(adjustedX - xShift, adjustedY + yShift, siz, siz);
+		// rect(adjustedX + xShift, adjustedY + yShift, siz, siz);
 		noFill();
 		rect(adjustedX, adjustedY, siz*2 + xShift, siz*2 + yShift);
 		//ellipse(adjustedX, adjustedY, sqrt(2*(siz*2 + xShift)*(siz*2 + xShift)), sqrt(2*(siz*2 + xShift)*(siz*2 + xShift)));
